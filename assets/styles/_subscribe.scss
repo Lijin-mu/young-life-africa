@@ -1,0 +1,133 @@
+/* ------------------------------------------------------------ *\
+	Subscribe
+\* ------------------------------------------------------------ */
+
+.form-subscribe {
+	position: relative;
+
+	.gform_heading,
+	.gfield_label {
+		display: none!important;
+	}
+
+	.gfield {
+		width: 100% !important;
+
+	}
+
+    div.validation_error {
+      border: none !important;
+    }
+
+  .gform_wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 430px;
+
+
+		.gform_footer {
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.gfield_error {
+		background: transparent!important;
+		border: 0!important;
+
+		.gfield_description  {
+			color: $white !important;
+			font-weight: 400 !important;
+		}
+	}
+
+	div.validation_error {
+		background: transparent;
+		font-weight: 400!important;
+		color: $white!important;
+	}
+
+	.ginput_container {
+		input {
+			appearance: none;
+			background: rgba(226,222,211,.2);
+			border: 0;
+			border-radius: 30px!important;
+			font-size: 14px!important;
+			display: block;
+			height: 60px!important;
+			width: 100% !important;
+			margin: auto;
+			position: relative;
+			font-weight: 300;
+			padding: 0 57px 0 36px!important;
+			transition: color .3s;
+		}
+	}
+
+
+	.gform_footer {
+		margin: 0 !important;
+		padding: 0 !important;
+
+		.gform_button.gform_image_button {
+			appearance: none;
+			border: 0;
+			font-size: 0!important;
+			line-height: 0;
+			text-indent: -4004px;
+			position: absolute;
+			bottom: 21px;
+			right: 31px;
+			height: 17px;
+			margin: 0 !important;
+			border-radius: 0!important;
+			margin-bottom: 0!important;
+			width: 23px!important;
+			height: 17px!important;
+			background-size: 100% 100%;
+
+			@media #{$mobile} {
+				right: 36px;
+			}
+		}
+	}
+
+
+	/*  Subscribe Alt  */
+
+	&--alt {
+		.gfield {
+			input {
+				color: #8f8a82;
+				background: transparent;
+				border: 2px solid #c3bfb4;
+				padding: 0 30px;
+				transition: color .3s;
+
+				&:hover {
+					color: $orange;
+				}
+			}
+		}
+
+		.gform_button {
+			background-image: url(../images/ico-envelope-orange@2x.png);
+		}
+	}
+}
+
+.subscribe {
+	.gform_wrapper {
+		width: 100%;
+		max-width: 430px;
+	}
+
+	.gform_wrapper.gform_validation_error .gform_body ul li.gfield.gfield_error:not(.gf_left_half):not(.gf_right_half) {
+		max-width: 100% !important;
+
+		input {
+			border: 0!important;
+		}
+	}
+}

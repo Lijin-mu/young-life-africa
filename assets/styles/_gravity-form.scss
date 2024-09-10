@@ -1,0 +1,276 @@
+/* ------------------------------------------------------------ *\
+	Gravity Form
+\* ------------------------------------------------------------ */
+
+.gform_wrapper {
+	display: inline-block;
+	max-width: 630px;
+	margin: 0 auto!important;
+
+	@media(max-width: 1370px){
+		margin: 0 -24px;
+	}
+
+	@media #{$small-desktop} {
+		margin: 0 -90px;
+	}
+
+	@media #{$tablet-portrait} {
+		margin: 0 auto;
+	}
+
+	@media #{$mobile} {
+		display: block;
+	}
+
+	ul {
+		li.gfield {
+			margin-top: 0 !important;
+		}
+	}
+
+	.gfield_label {
+		display: none !important;
+	}
+
+	.gfield_error {
+		background: transparent!important;
+		border: 0!important;
+	}
+
+	.gfield_checkbox,
+	.gfield_radio {
+		li {
+			height: 31px;
+
+			label {
+				padding-left: 40px!important;
+				line-height: 30px;
+			}
+		}
+	}
+
+	.gfield {
+		& + .gfield {
+			margin-left: 30px;
+		}
+	}
+
+	.gform_heading,
+	.gfield_label {
+		display: none;
+	}
+
+	label.gfield_label+div.ginput_container {
+		margin-top: 0;
+	}
+
+	.top_label li.gfield.gf_left_half {
+		margin-right: 30px!important;
+		float: left;
+
+		@media #{$mobile} {
+			margin-right: 0 !important;
+		}
+	}
+
+	.gfield_html {
+		margin: 0px 0 20px;
+		color: #45403d;
+		font-size: 17px;
+		font-weight: 500;
+	}
+
+	.gfield_checkbox li label, .gform_wrapper .gfield_radio li label {
+		line-height: 2;
+	}
+
+	.gfield_checkbox {
+
+		&:after {
+			height: 0;
+			clear: both;
+			content: '';
+			display: table;
+		}
+
+		input {
+			position: absolute;
+			visibility: hidden;
+			height: 0!important;
+			width: 0 !important;
+			margin: 0 !important;
+			border: 0!important;
+			line-height: 0;
+
+			&:checked + label {
+				color: #45403d;
+
+				&:before {
+					border-color: #45403d;
+				}
+
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+
+		label {
+			position: relative;
+			padding-left: 40px;
+			margin: 0;
+			font-size: 15px;
+			font-weight: 500;
+			transition: color .3s;
+
+			&:before,
+			&:after {
+				position: absolute;
+				content: '';
+			}
+
+			&:before {
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				left: 0;
+				top: 0;
+				border: 2px solid #d4cfc7;
+				border-radius: 5px;
+				transition: border-color .3s;
+			}
+
+			&:after {
+				width: 12px;
+				height: 9px;
+				top: 11px;
+				left: 9px;
+				background: url(../images/ico-check@2x.png) no-repeat 0 0;
+				background-size: 100% 100%;
+				opacity: 0;
+				transition: opacity .3s;
+			}
+		}
+
+		li {
+			float: left;
+			width: 300px;
+			margin-bottom: 20px;
+
+			& + li:nth-child(even) {
+				margin-left: 30px!important;
+
+				@media #{$mobile} {
+					margin-left: 0 !important;
+				}
+			}
+		}
+	}
+
+	.gfield {
+		width: 300px !important;
+		margin-bottom: 30px!important;
+
+		@media #{$mobile} {
+			width: 100% !important;
+		}
+
+		&.gfield-checkbox {
+			width: 100% !important;
+		}
+
+		&.gfield-html {
+			margin-bottom: 23px !important;
+		}
+
+		input {
+			appearance: none;
+		    background: transparent;
+			border: 2px solid #d4cfc7;
+			background: transparent;
+			border-radius: 4px;
+			height: 50px;
+			width: 300px!important;
+			padding-left: 19px!important;
+			font-size: 15px!important;
+			font-weight: 500;
+			transition: border-color .3s;
+
+			@media #{$mobile} {
+				width: 100% !important;
+			}
+
+			&:focus {
+				border-color: $orange;
+			}
+		}
+	}
+
+	.gfield-checkbox {
+		width: 100%;
+		margin-bottom: 9px !important;
+	}
+
+	.gfield-textarea {
+		width: 630px !important;
+		margin-bottom: 0 !important;
+
+		@media #{$mobile} {
+			width: 100% !important;
+		}
+
+		textarea {
+			display: block;
+			width: 100%;
+			background: transparent;
+			appearance: none;
+			border: 2px solid #d4cfc7;
+			background: transparent;
+			border-radius: 4px;
+			height: 200px;
+			padding: 12px 19px;
+			font-size: 15px;
+			font-weight: 500;
+			transition: border-color .3s;
+
+			&:focus {
+				border-color: $orange;
+			}
+		}
+	}
+
+	.gform_footer {
+		text-align: center;
+		padding-top: 0;
+		margin-top: 30px;
+	}
+
+	.gform_button {
+		background: $orange;
+		color: $light;
+		border: 0;
+		appearance: none;
+		border-radius: 25px;
+		padding: 14px 30px;
+		font-size: 15px!important;
+		font-weight: 500;
+		transition: opacity .3s;
+
+		&:hover {
+			opacity: .9;
+		}
+	}
+
+	ul.gfield_checkbox li input[type=checkbox]:checked+label, .gform_wrapper ul.gfield_radio li input[type=radio]:checked+label {
+		font-weight: 500;
+	}
+}
+
+.gform_validation_error {
+	.gform_button  {
+		bottom: 66px!important;
+	}
+}
+
+

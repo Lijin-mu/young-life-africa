@@ -1,0 +1,39 @@
+/* ------------------------------------------------------------ *\
+	Variables
+\* ------------------------------------------------------------ */
+
+$font-family-rubik: 'Rubik', sans-serif;
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$font-family-serif: Times, 'Times New Roman', serif;
+
+$font-size-base: 17px;
+$line-height-base: 1.59;
+
+$white: #fff;
+$light: #edebe4;
+$lighter: #f4efe8;
+$orange: #ec6642;
+$dark: #8f8a82;
+$darker: #45403d;
+
+$shell-max-width: 1170px;
+$shell-gutter: 15px;
+
+$responsive-xxs: 374px;
+$responsive-xs: 767px;
+$responsive-sm: 991px;
+$responsive-md: 1279px;
+
+$mobile-small: '(max-width: #{$responsive-xxs}) ';
+$mobile: '(max-width: #{$responsive-xs}) ';
+$tablet-portrait: '(max-width: #{$responsive-sm}) ';
+$small-desktop: '(max-width: #{$responsive-md}) ';
+$retina: '(min-resolution: 2dppx) ';
+
+// Usage
+// @media #{$small-desktop}
+
+// Container Width
+$container-width: 1170px;
+$grid-gutter: 15px;
+

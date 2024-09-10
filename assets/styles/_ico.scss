@@ -1,0 +1,165 @@
+/* ------------------------------------------------------------ *\
+	Ico
+\* ------------------------------------------------------------ */
+
+.ico-logo-white{
+  background-image: url(../images/sprite/ico-logo-white.png);
+  width: 37px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0px;
+}
+
+.ico-example-icon{
+  background-image: url(../images/sprite/ico-example-icon.png);
+  width: 59px;
+  height: 59px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0px;
+}
+
+.ico-logo{
+  background-image: url(../images/sprite/ico-logo.png);
+  width: 37px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0px;
+}
+
+.ico-plus-orange {
+	display: inline-block;
+	background: url(../images/ico-plus-orange.png) no-repeat 0 0;
+	width: 11px;
+	height: 12px;
+	background-size: 100% 100%;
+
+	@media only screen and ( -webkit-min-device-pixel-ratio: 2 ), only screen and ( min-device-pixel-ratio: 2 ), only screen and ( min-resolution: 192dpi ) {
+		background-image: url(../images/ico-plus-orange@2x.png);
+		width: 11px;
+		height: 12px;
+	}
+}
+
+.ico-plus {
+	display: inline-block;
+	background: url(../images/ico-plus.png) no-repeat 0 0;
+	width: 11px;
+	height: 12px;
+	background-size: 100% 100%;
+
+	@media only screen and ( -webkit-min-device-pixel-ratio: 2 ), only screen and ( min-device-pixel-ratio: 2 ), only screen and ( min-resolution: 192dpi ) {
+		background-image: url(../images/ico-plus@2x.png);
+		width: 11px;
+		height: 12px;
+	}
+}
+
+.ico-plus-large {
+	display: inline-block;
+	background: url(../images/ico-plus-large.png) no-repeat 0 0;
+	width: 14px;
+	height: 14px;
+	background-size: 100% 100%;
+
+	@media only screen and ( -webkit-min-device-pixel-ratio: 2 ), only screen and ( min-device-pixel-ratio: 2 ), only screen and ( min-resolution: 192dpi ) {
+		background-image: url(../images/ico-plus-large@2x.png);
+		width: 14px;
+		height: 14px;
+	}
+}
+
+.ico-plus-orange-large {
+	display: inline-block;
+	background: url(../images/ico-plus-orange-large.png) no-repeat 0 0;
+	width: 14px;
+	height: 14px;
+	background-size: 100% 100%;
+
+	@media only screen and ( -webkit-min-device-pixel-ratio: 2 ), only screen and ( min-device-pixel-ratio: 2 ), only screen and ( min-resolution: 192dpi ) {
+		background-image: url(../images/ico-plus-orange-large@2x.png);
+		width: 14px;
+		height: 14px;
+	}
+}
+
+.ico-play {
+	display: inline-block;
+	width: 160px;
+	height: 160px;
+
+	@media #{$tablet-portrait} {
+		width: 90px;
+		height: 90px;
+	}
+
+	&:after {
+		position: absolute;
+		content: '';
+		width: 24px;
+		height: 27px;
+		background: url(../images/ico-play@2x.png) no-repeat 0 0;
+		background-size: 100% 100%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&:before {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		content: '';
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		background: rgba(236,102,66,.8);
+		transition: width, height;
+		transition-duration: .6s;
+
+		@media #{$tablet-portrait} {
+			width: 90px;
+			height: 90px;
+		}
+	}
+
+	&:hover {
+		&:before {
+			width: 160px;
+			height: 160px;
+
+			@media #{$tablet-portrait} {
+				width: 90px;
+				height: 90px;
+			}
+		}
+	}
+}
+
+.ico-play-small {
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/ico-play-small.png) no-repeat 0 0;
+	width: 11px;
+	height: 15px;
+	background-size: 100% 100%;
+
+	@media only screen and ( -webkit-min-device-pixel-ratio: 2 ), only screen and ( min-device-pixel-ratio: 2 ), only screen and ( min-resolution: 192dpi ) {
+		background-image: url(../images/ico-play-small@2x.png);
+		width: 11px;
+		height: 15px;
+	}
+}
+
+.ico-play-small-orange {
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/ico-play-small-orange@2x.png) no-repeat 0 0;
+	width: 11px;
+	height: 15px;
+	background-size: 100% 100%;
+}
+

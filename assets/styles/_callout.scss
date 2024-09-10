@@ -1,0 +1,28 @@
+/* ------------------------------------------------------------ *\
+	Callout
+\* ------------------------------------------------------------ */
+
+.callout {
+	text-align: center;
+	color: $lighter;
+	background: url(../images/callout.jpg) no-repeat 0 0;
+	background-size: cover;
+	padding: 101px 0 78px;
+
+	@media #{$tablet-portrait} {
+		padding: 102px 0;
+	}
+
+	h2 {
+		color: inherit;
+		margin-bottom: 27px;
+	}
+
+	.subscribe {
+		margin-top: 30px;
+
+		@media #{$mobile} {
+			margin: 37px 23px 0 22px;
+		}
+	}
+}

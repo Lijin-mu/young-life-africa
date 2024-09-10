@@ -1,0 +1,137 @@
+/* ------------------------------------------------------------ *\
+	Button
+\* ------------------------------------------------------------ */
+
+.btn {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	appearance: none;
+	font-size: 15px;
+	color: $light;
+	background: $orange;
+	border: 2px solid transparent;
+	font-weight: 500;
+	border-radius: 23px;
+	padding: 13px 20px 12px;
+	min-width: 132px;
+	transition: background .3s, color .3s, border-color .3s;
+
+	&:hover {
+		background: $lighter;
+		color: $orange;
+		border-color: $orange;
+
+		.ico-plus,
+		.ico-plus-large {
+			background-image: url(../images/ico-plus-orange.png);
+		}
+
+		.ico-play-small {
+			background-image: url(../images/ico-play-small-orange@2x.png);
+		}
+	}
+
+	i {
+		transition: background-image .3s;
+	}
+
+	.ico-plus,
+	.ico-plus-orange {
+		position: relative;
+		left: -7px;
+		top: 1px;
+	}
+
+	.ico-plus-large {
+		position: relative;
+		top: 1px;
+	}
+
+	/*  Btn Border  */
+
+	&--border {
+		padding: 12px 12px 11px 20px;
+		background: transparent;
+		color: $orange;
+		border: 2px solid $orange;
+		transition: background .3s, color .3s;
+
+		&:hover {
+			background: $orange;
+			color: $light;
+
+			i {
+				background-image: url(../images/ico-plus.png);
+			}
+		}
+
+		&-dark {
+			border-color: #8f8a82;
+			color: #8f8a82;
+		}
+
+		&-light {
+			border-color: $light;
+			color: $light;
+
+			&:hover {
+				border-color: $orange;
+			}
+		}
+	}
+
+	/*  Button Alt  */
+
+	&--alt {
+		min-width: 179px;
+	}
+
+	/*  Button small  */
+
+	&--small {
+		font-size: 12px;
+		min-width: 110px;
+	}
+
+	/*  Button Medium  */
+
+	&--medium {
+		min-width: 162px;
+	}
+
+	/*  Button wide  */
+
+	&--wide {
+		min-width: 173px;
+	}
+
+	/*  Button wider  */
+
+	&--wider {
+		min-width: 216px;
+	}
+
+	/*  Button Large  */
+
+	&--large {
+		min-width: 191px;
+		font-size: 18px;
+		padding: 17px 15px 16px;
+		border-radius: 30px;
+
+		i {
+			margin-right: 8px;
+		}
+	}
+
+	/*  Button Block  */
+
+	&--block {
+		display: block;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

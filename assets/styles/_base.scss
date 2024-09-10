@@ -1,0 +1,120 @@
+/* ------------------------------------------------------------ *\
+	Base
+\* ------------------------------------------------------------ */
+
+body {
+	min-width: 320px;
+	background: #fff;
+	font-family: $font-family-rubik;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: $dark;
+
+  &.admin-bar {
+    .header {
+      top: 32px;
+    }
+  }
+}
+
+
+a {
+	color: $orange;
+	text-decoration: none;
+
+	&:hover,
+	&[href^="tel"] {
+		text-decoration: none;
+		color: $dark;
+	}
+}
+
+h1 { font-size: 45px; font-weight: 700; line-height: 1.11; }
+h2 { font-size: 35px; line-height: 1.14; }
+h3  { font-size: 25px; }
+h4  { font-size: 22px; }
+h5  { font-size: 17px; }
+h6  { font-size: 15px; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	font-weight: 700;
+	color: $darker;
+}
+
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+
+@media #{$tablet-portrait} {
+	h1 {
+		font-size: 35px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+}
+
+@media #{$mobile} {
+	body {
+    &.admin-bar {
+      .header {
+        top: 46px;
+
+        &.sticky {
+          top: 0;
+        }
+      }
+    }
+
+		&.active {
+			overflow-y: hidden;
+
+			@media #{$mobile} {
+				.nav {
+					visibility: visible;
+					opacity: 1;
+					top: 0;
+					transition-delay: 0s;
+
+
+					li {
+						transform: translateY(0);
+						visibility: visible;
+						opacity: 1;
+
+						@for $i from 1 through 10 {
+							&:nth-child(#{$i}) {
+								transition-delay: (#{$i*0.1s});
+							}
+						}
+					}
+				}
+
+				.nav-btn {
+					&:before {
+						background: $darker;
+						transform: rotate(45deg);
+						top: -7px;
+						width: 15px;
+					}
+
+					&:after {
+						background: $darker;
+						transform: rotate(-45deg);
+						top: -7px;
+						width: 15px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.mapplic-tooltip-description {
+  text-align: center;
+
+  img {
+    margin: 15px auto;
+    display: block;
+    max-width: 90% !important;
+  }
+
+   a {
+     transition: border-color .3s,background .3s,color .3s;
+     color: #ec6642;
+     padding: 12px 12px 11px 20px;
+     background: transparent;
+     text-align: center;
+     cursor: pointer;
+     text-decoration: none;
+     font-weight: 500;
+     border-radius: 23px;
+     border: 2px solid #ec6642;
+     display: block;
+     margin: 15px auto;
+     max-width: 90%;
+
+     @media (max-width: 767px) {
+       font-size: 10px;
+       padding: 10px;
+     }
+
+     &:hover {
+       background: #ec6642;
+       color: #edebe4;
+     }
+   }
+}
+
+
+.mapplic-tooltip {
+  padding: 20px !important;
+}
+
+.mapplic-tooltip-content, .mapplic-tooltip-title {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #mapplic-id1774 {
+    height: 1000px !important;
+  }
+
+  .mapplic-tooltip-content {
+    max-height: 500px !important;
+  }
+}
+
+.mapplic-tooltip-description, .mapplic-tooltip p {
+  font-size: 12px;
+  font-weight: 400;
+}

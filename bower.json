@@ -1,0 +1,27 @@
+{
+  "name": "sage",
+  "homepage": "https://roots.io/sage/",
+  "authors": [
+    "Ben Word <ben@benword.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "3.3.7",
+    "magnific-popup": "^1.1.0",
+    "owl.carousel": "^2.2.0",
+    "countUp": "https://github.com/inorganik/countUp.js.git",
+    "viewportChecker": "https://github.com/dirkgroenen/jQuery-viewport-checker.git",
+    "font-awesome": "^4.7.0",
+    "jquery-cookie": "https://github.com/carhartl/jquery-cookie.git"
+  },
+  "description": "",
+  "main": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

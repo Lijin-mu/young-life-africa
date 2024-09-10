@@ -1,0 +1,62 @@
+/* ------------------------------------------------------------ *\
+	Blockquote
+\* ------------------------------------------------------------ */
+
+blockquote {
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 1.15;
+	border: 0;
+	color: #45403d;
+
+	p {
+		font-weight: 700 !important;
+	}
+
+	@media #{$small-desktop} {
+		padding: 0;
+	}
+
+	@media #{$mobile} {
+		line-height: 1.2;
+		font-size: 25px;
+	}
+
+	& ~ .blockquote__author {
+		font-weight: 500;
+		font-size: 15px;
+		margin-top: 27px;
+
+		@media #{$mobile} {
+			margin-top: 38px;
+		}
+	}
+
+	/*  Blockquote Dark  */
+
+	&--dark {
+		color: #45403d;
+
+		blockquote {
+			
+			line-height: 1.15;
+		}
+
+		.blockquote__author {
+			margin-top: 27px;
+			color: #8f8a82;
+		}
+	}
+
+	/*  Blockquote Orange  */
+
+	&--orange {
+		color: $orange;
+	}
+
+	/*  Blockquote center  */
+
+	&--center {
+		text-align: center;
+	}
+}

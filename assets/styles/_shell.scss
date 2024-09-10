@@ -1,0 +1,13 @@
+/* ------------------------------------------------------------ *\
+	Shell
+\* ------------------------------------------------------------ */
+
+.shell {
+	max-width: $shell-max-width + $shell-gutter * 2;
+	padding-right: $shell-gutter;
+	padding-left: $shell-gutter;
+
+	&--fluid {
+		max-width: none;
+	}
+}

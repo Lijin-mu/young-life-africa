@@ -1,0 +1,24 @@
+/* ------------------------------------------------------------ *\
+	Container
+\* ------------------------------------------------------------ */
+
+.container {
+	width: $container-width + $grid-gutter*2;
+
+	@media(max-width: 1320px){
+		width: 1120px;
+	}
+
+	@media(max-width: 1200px){
+		width: 912px;
+	}
+
+	@media(max-width: 991px){
+		width: 702px;
+	}
+
+	@media #{$mobile} {
+		max-width: none;
+		width: auto;
+	}
+}
